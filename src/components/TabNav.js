@@ -12,10 +12,11 @@ import WelcomePage from "./WelcomePage";
 // TODO: Add missing tabs below
 
 const panes = [
-    {menuItem: 'Welcome', render: () => <Tab.Pane><Route exact path="/" component={WelcomePage}/></Tab.Pane>},
-    {menuItem: 'Characters', render: () => <Tab.Pane><Route path="/characters" component={CharacterList} render={props => <CharacterList {...props} />}/></Tab.Pane>},
-    {menuItem: 'Locations', render: () => <Tab.Pane><Route path="/locations" component={LocationList} ender={props => <LocationList {...props} />}/></Tab.Pane>},
-    {menuItem: 'Episodes', render: () => <Tab.Pane><Route path="/episodes" component={EpisodeList} ender={props => <EpisodeList {...props} />}/></Tab.Pane>}
+    // {menuItem: 'Welcome', render: () => <Tab.Pane><Route exact path="/" component={WelcomePage}/></Tab.Pane>},
+    {menuItem: 'Welcome', render: () => <Tab.Pane>{WelcomePage}</Tab.Pane>},
+    {menuItem: 'Characters', render: () => <Tab.Pane><Route path="/characters" component={CharacterList}/></Tab.Pane>},
+    {menuItem: 'Locations', render: () => <Tab.Pane><Route path="/locations" component={LocationList}/></Tab.Pane>},
+    {menuItem: 'Episodes', render: () => <Tab.Pane><Route path="/episodes" component={EpisodeList}/></Tab.Pane>}
 ]
 
 export default function TabNav() {
@@ -24,3 +25,4 @@ export default function TabNav() {
        <Tab panes={panes} />
    )
 };
+

@@ -37,3 +37,33 @@ main {
 header h1 {
   text-align: center;
 }
+
+/*Jenn's Styles*/
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  background-color: black;
+  margin-left: 15px;
+
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+ 
+}
+
+.nav-links a {
+  margin-right: 10px;
+  color: white;
+  font-size: 1em;
+  }
+
+  .ui centered{
+    padding-bottom: 15px;
+  }
+
+  .welcome-page h1{
+    padding-top: 15px;
+  }
